@@ -113,9 +113,11 @@ public class Calculator {
         return result;
     }
     public double fact(double num) {
+        logger.info("[FACTORIAL] - " + num);
         double facto = 1;
         for(int i = 1; i <= num; ++i)
         { facto *= i;   }
+        logger.info("[RESULT - FACTORIAL] - " + facto);
         return  facto;
     }
 }
